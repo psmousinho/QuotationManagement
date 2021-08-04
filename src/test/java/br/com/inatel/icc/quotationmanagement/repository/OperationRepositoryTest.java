@@ -16,7 +16,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import br.com.inatel.icc.quotationmanagement.model.Operation;
 import br.com.inatel.icc.quotationmanagement.model.Quote;
-import br.com.inatel.icc.quotationmanagement.repository.OperationRepository;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

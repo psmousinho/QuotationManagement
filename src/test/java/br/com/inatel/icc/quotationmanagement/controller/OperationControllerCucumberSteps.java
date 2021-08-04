@@ -14,7 +14,6 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
-import br.com.inatel.icc.quotationmanagement.controller.OperationController;
 import br.com.inatel.icc.quotationmanagement.controller.dto.OperationDTO;
 import br.com.inatel.icc.quotationmanagement.controller.form.OperationForm;
 import br.com.inatel.icc.quotationmanagement.model.Operation;
