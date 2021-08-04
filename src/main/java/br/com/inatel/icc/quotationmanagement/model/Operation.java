@@ -28,6 +28,7 @@ public class Operation {
 	}
 
 	public Operation(String stockId) {
+		this.uuid = UUID.randomUUID();
 		this.stockId = stockId;
 		this.quotes = new ArrayList<>();
 	}
