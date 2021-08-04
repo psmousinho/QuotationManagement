@@ -1,6 +1,7 @@
 package br.com.inatel.icc.quotationmanagent.controller;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
@@ -58,7 +59,7 @@ public class OperationController {
 			operations = operationRepository.findAll();
 		}
 
-		List<OperationDTO> operationsDTO = operations.stream().map(OperationDTO::new).toList();
+		List<OperationDTO> operationsDTO = operations.stream().map(OperationDTO::new).collect(Collectors.toList());;
 		return ResponseEntity.ok(operationsDTO);
 	}
 
