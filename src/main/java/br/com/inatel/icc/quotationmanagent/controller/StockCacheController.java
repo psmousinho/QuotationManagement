@@ -16,7 +16,7 @@ public class StockCacheController {
 	@DeleteMapping
 	@CacheEvict(value = { "getAllStocks", "getStock" }, allEntries = true)
 	public ResponseEntity<?> clearCache() {
-		log.info("Cleaning caches");
+		log.info("Clearing Caches by request of StockManager API");
 		return ResponseEntity.ok().build();
 	}
 }

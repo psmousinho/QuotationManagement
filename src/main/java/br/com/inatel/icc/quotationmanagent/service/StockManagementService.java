@@ -25,7 +25,8 @@ public class StockManagementService {
 
 	@Cacheable("getAllStocks")
 	public List<Stock> getAllStocks() {
-		log.info("Acessing service-manager API to colect all stocks");
+		log.info("Acessing StockManager API to colect all stocks");
+		
 		String url = apiUrl + "/stock/";
 		Stock[] stockArr = restTemplate.getForObject(url, Stock[].class);
 		return Arrays.asList(stockArr);
@@ -33,12 +34,15 @@ public class StockManagementService {
 
 	@Cacheable("getStock")
 	public Stock getStock(String stockId) {
-		log.info("Acessing service-manager API to colect stock with value {}", stockId);
+		log.info("Acessing StockManager API to colect specific stock", stockId);
+		
 		String url = apiUrl + "/stock/" + stockId;
 		return restTemplate.getForObject(url, Stock.class);
 	}
 
 	public static void registerForNotifications() throws StockManagerNotFoundException {
+		log.info("Registering for notifications from StockManager API");
+		
 		RestTemplate restTemplete = new RestTemplate();
 
 		String url = "http://localhost:8080/notification";
