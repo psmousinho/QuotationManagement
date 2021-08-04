@@ -1,10 +1,10 @@
-package br.com.inatel.icc.quotationmanagent.controller.dto;
+package br.com.inatel.icc.quotationmanagement.controller.dto;
 
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-import br.com.inatel.icc.quotationmanagent.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
 
 public class OperationDTO {
 
@@ -13,7 +13,7 @@ public class OperationDTO {
 	private Map<LocalDate, String> quotes;
 
 	public OperationDTO(Operation operation) {
-		opId = operation.getOpId().toString();
+		opId = operation.getUuid().toString();
 		stockId = operation.getStockId();
 		quotes = new HashMap<LocalDate, String>();
 		operation.getQuotes().forEach(q -> quotes.put(q.getDate(), q.getPrice().toString()));

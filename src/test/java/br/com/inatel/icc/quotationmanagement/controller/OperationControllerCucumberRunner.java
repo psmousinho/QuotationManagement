@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.controller;
+package br.com.inatel.icc.quotationmanagement.controller;
 
 import org.junit.runner.RunWith;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

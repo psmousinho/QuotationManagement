@@ -1,11 +1,11 @@
-package br.com.inatel.icc.quotationmanagent.controller.form;
+package br.com.inatel.icc.quotationmanagement.controller.form;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Map;
 
-import br.com.inatel.icc.quotationmanagent.model.Operation;
-import br.com.inatel.icc.quotationmanagent.model.Quote;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Quote;
 
 public class OperationForm {
 

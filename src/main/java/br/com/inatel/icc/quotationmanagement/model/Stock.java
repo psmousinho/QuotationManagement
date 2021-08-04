@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.model;
+package br.com.inatel.icc.quotationmanagement.model;
 
 import java.io.Serializable;
 

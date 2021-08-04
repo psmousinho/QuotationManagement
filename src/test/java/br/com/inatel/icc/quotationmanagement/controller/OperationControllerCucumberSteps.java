@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.controller;
+package br.com.inatel.icc.quotationmanagement.controller;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -14,13 +14,14 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
-import br.com.inatel.icc.quotationmanagent.controller.dto.OperationDTO;
-import br.com.inatel.icc.quotationmanagent.controller.form.OperationForm;
-import br.com.inatel.icc.quotationmanagent.model.Operation;
-import br.com.inatel.icc.quotationmanagent.model.Quote;
-import br.com.inatel.icc.quotationmanagent.model.Stock;
-import br.com.inatel.icc.quotationmanagent.repository.OperationRepository;
-import br.com.inatel.icc.quotationmanagent.service.StockManagementService;
+import br.com.inatel.icc.quotationmanagement.controller.OperationController;
+import br.com.inatel.icc.quotationmanagement.controller.dto.OperationDTO;
+import br.com.inatel.icc.quotationmanagement.controller.form.OperationForm;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Quote;
+import br.com.inatel.icc.quotationmanagement.model.Stock;
+import br.com.inatel.icc.quotationmanagement.repository.OperationRepository;
+import br.com.inatel.icc.quotationmanagement.service.StockManagementService;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -108,7 +109,7 @@ public class OperationControllerCucumberSteps {
 
 		for (int i = 0; i < nOfOperations; i++) {
 			Operation operation = new Operation(stockId);
-			operation.setOpId(UUID.randomUUID());
+			operation.setUuid(UUID.randomUUID());;
 			operation.setQuotes(generateQuotes(1, operation));
 			operations.add(operation);
 		}

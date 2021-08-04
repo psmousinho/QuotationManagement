@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.controller;
+package br.com.inatel.icc.quotationmanagement.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.inatel.icc.quotationmanagent.controller.dto.ErrorDTO;
-import br.com.inatel.icc.quotationmanagent.controller.dto.OperationDTO;
-import br.com.inatel.icc.quotationmanagent.controller.form.OperationForm;
-import br.com.inatel.icc.quotationmanagent.model.Operation;
-import br.com.inatel.icc.quotationmanagent.model.Stock;
-import br.com.inatel.icc.quotationmanagent.repository.OperationRepository;
-import br.com.inatel.icc.quotationmanagent.service.StockManagementService;
+import br.com.inatel.icc.quotationmanagement.controller.dto.ErrorDTO;
+import br.com.inatel.icc.quotationmanagement.controller.dto.OperationDTO;
+import br.com.inatel.icc.quotationmanagement.controller.form.OperationForm;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Stock;
+import br.com.inatel.icc.quotationmanagement.repository.OperationRepository;
+import br.com.inatel.icc.quotationmanagement.service.StockManagementService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

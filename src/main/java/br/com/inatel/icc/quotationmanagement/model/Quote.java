@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.model;
+package br.com.inatel.icc.quotationmanagement.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

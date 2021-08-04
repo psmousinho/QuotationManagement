@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.controller;
+package br.com.inatel.icc.quotationmanagement.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.inatel.icc.quotationmanagent.service.StockManagementService;
-import br.com.inatel.icc.quotationmanagent.util.exceptions.StockManagerNotFoundException;
+import br.com.inatel.icc.quotationmanagement.service.StockManagementService;
+import br.com.inatel.icc.quotationmanagement.util.exceptions.StockManagerNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.repository;
+package br.com.inatel.icc.quotationmanagement.repository;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -14,8 +14,9 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import br.com.inatel.icc.quotationmanagent.model.Operation;
-import br.com.inatel.icc.quotationmanagent.model.Quote;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Quote;
+import br.com.inatel.icc.quotationmanagement.repository.OperationRepository;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

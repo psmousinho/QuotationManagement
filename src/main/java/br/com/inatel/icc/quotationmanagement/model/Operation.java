@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.model;
+package br.com.inatel.icc.quotationmanagement.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,9 @@ public class Operation {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private UUID id;
+	private Long id;
+
+	private UUID uuid;
 	private String stockId;
 	@OneToMany(mappedBy = "operation", cascade = { CascadeType.MERGE, CascadeType.PERSIST })
 	private List<Quote> quotes;
@@ -30,12 +32,20 @@ public class Operation {
 		this.quotes = new ArrayList<>();
 	}
 
-	public UUID getOpId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setOpId(UUID opId) {
-		this.id = opId;
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public UUID getUuid() {
+		return uuid;
+	}
+
+	public void setUuid(UUID uuid) {
+		this.uuid = uuid;
 	}
 
 	public String getStockId() {

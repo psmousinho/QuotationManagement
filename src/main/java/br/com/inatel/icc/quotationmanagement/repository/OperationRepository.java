@@ -1,11 +1,11 @@
-package br.com.inatel.icc.quotationmanagent.repository;
+package br.com.inatel.icc.quotationmanagement.repository;
 
 import java.util.List;
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import br.com.inatel.icc.quotationmanagent.model.Operation;
+import br.com.inatel.icc.quotationmanagement.model.Operation;
 
 public interface OperationRepository extends JpaRepository<Operation, UUID>{
 

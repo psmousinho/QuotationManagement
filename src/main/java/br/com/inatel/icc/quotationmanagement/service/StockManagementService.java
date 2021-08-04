@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.service;
+package br.com.inatel.icc.quotationmanagement.service;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,9 +12,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import br.com.inatel.icc.quotationmanagent.controller.dto.NotificationDTO;
-import br.com.inatel.icc.quotationmanagent.model.Stock;
-import br.com.inatel.icc.quotationmanagent.util.exceptions.StockManagerNotFoundException;
+import br.com.inatel.icc.quotationmanagement.controller.dto.NotificationDTO;
+import br.com.inatel.icc.quotationmanagement.model.Stock;
+import br.com.inatel.icc.quotationmanagement.util.exceptions.StockManagerNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

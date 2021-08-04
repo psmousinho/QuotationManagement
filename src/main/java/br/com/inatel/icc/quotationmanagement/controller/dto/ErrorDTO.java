@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.controller.dto;
+package br.com.inatel.icc.quotationmanagement.controller.dto;
 
 public class ErrorDTO {
 

@@ -1,4 +1,4 @@
-package br.com.inatel.icc.quotationmanagent.util.exceptions;
+package br.com.inatel.icc.quotationmanagement.util.exceptions;
 
 public class StockManagerNotFoundException extends Exception {
 
