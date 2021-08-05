@@ -10,9 +10,9 @@ The database and external API dependencies are handle by docker and you can find
 
 ## Features
   - Stock (External API):
-	  - Create 
-	  - List by id
+	  - Retrive by id
 	  - List all
+	  - Subscribe for notifications
 	    
   - Stock Quotes:
 	  - Create 
